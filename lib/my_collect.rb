@@ -3,6 +3,7 @@ i = 0
 newArray = []
 while i < array.length
 i += 1
-newArray << yield(array[i]).upcase
+newArray << yield(array[i])
 end
+return newArray.upcase
 end

@@ -2,8 +2,8 @@ def my_collect(array)
 i = 0 
 newArray = []
 while i < array.length
-i += 1
-newArray << yield(array[i])
+newArray << yield(array[i]).upcase
+i = i + 0
 end
-return newArray.upcase
+newArray
 end

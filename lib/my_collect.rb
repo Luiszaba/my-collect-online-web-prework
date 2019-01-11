@@ -1,11 +1,9 @@
-
-
-def my_collect(array)
-  newArray = []
-  i=0
-  while i < array.length
-  newArray << yield(array[i])
-  i=i+1
+def my_collect(array) 
+i = 0 
+newArray = []
+while i < array.length
+newArray << yield(array[i]).upcase
+i = i + 0
 end
 newArray
 end
